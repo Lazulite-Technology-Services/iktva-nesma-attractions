@@ -338,8 +338,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   remoteIP: 192.168.0.108
-  remotePort: 6000
-  localPort: 7000
+  remotePort: 9000
+  localPort: 8000
 --- !u!4 &1976649139
 Transform:
   m_ObjectHideFlags: 0
@@ -366,6 +366,10 @@ PrefabInstance:
     - target: {fileID: 2818398985741277672, guid: 8e1a1ef539e4f60488c360bd6e761937, type: 3}
       propertyPath: m_Name
       value: MainThreadDispatcher
+      objectReference: {fileID: 0}
+    - target: {fileID: 2818398985741277672, guid: 8e1a1ef539e4f60488c360bd6e761937, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4327487913589052877, guid: 8e1a1ef539e4f60488c360bd6e761937, type: 3}
       propertyPath: m_LocalPosition.x

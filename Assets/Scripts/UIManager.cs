@@ -27,11 +27,11 @@ public class UIManager : MonoBehaviour
         commandButton.onClick.AddListener(EnableDisableCommandPanel);
         close.onClick.AddListener(EnableDisableCommandPanel);
 
-        for (int i = 0; i < videoButtons.Length; i++)
-        {
-            videoButtons[i].onClick.AddListener(() => GameManager.instance.SendMessageToClient(videoButtons[i].name));
-            //videoButtons[i].onClick.AddListener(() => VideoHandler.instance.PlayVideo(videoButtons[i].GetComponent<ButtonData>().path));
-        }
+        //for (int i = 0; i < videoButtons.Length; i++)
+        //{
+        //    videoButtons[i].onClick.AddListener(() => GameManager.instance.SendMessageToClient(videoButtons[i].name));
+        //    //videoButtons[i].onClick.AddListener(() => VideoHandler.instance.PlayVideo(videoButtons[i].GetComponent<ButtonData>().path));
+        //}
     }
 
     void EnableOrDisableScreen(int index, int index2)

@@ -224,7 +224,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 10863825}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1119797261}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: SendMessageToClient
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Shareholders
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &10863825
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -583,7 +595,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 136675899}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1119797261}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: SendMessageToClient
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: AboutUs
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &136675899
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -727,7 +751,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 160469124}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1119797261}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: SendMessageToClient
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Sustainability
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &160469124
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -954,7 +990,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 375465201}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1119797261}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: SendMessageToClient
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: SafeManhours
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &375465201
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2716,7 +2764,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1294926909}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1119797261}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: SendMessageToClient
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: CorporateSocialResponsibilities
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1294926909
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2860,7 +2920,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1310939125}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1119797261}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: SendMessageToClient
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: OngoingProjects
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1310939125
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3196,7 +3268,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1473871707}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1119797261}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: SendMessageToClient
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Subsidiaries
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1473871707
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3422,7 +3506,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1807836134}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1119797261}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: SendMessageToClient
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: CorporateAwards
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1807836134
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3686,7 +3782,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1911580158}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1119797261}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: SendMessageToClient
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: home
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1911580158
 MonoBehaviour:
   m_ObjectHideFlags: 0
