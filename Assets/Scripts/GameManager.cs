@@ -2,8 +2,10 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    public GameManager instance;
+    public static GameManager instance;
     private string ip;
+
+    [SerializeField] private UdpManager udpManagerInstance;
 
     private void Awake()
     {
@@ -24,5 +26,10 @@ public class GameManager : MonoBehaviour
     public void SaveIP()
     {
         PlayerPrefs.SetString("ip", ip);
+    }
+
+    public void SendMessageToClient(string msg)
+    {
+        udpManagerInstance.SendMessage(msg);
     }
 }

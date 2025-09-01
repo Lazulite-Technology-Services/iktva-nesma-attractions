@@ -9,6 +9,8 @@ public class UIManager : MonoBehaviour
 
     [SerializeField] private Button startButton, home, save, close, commandButton;
 
+    [SerializeField] private Button[] videoButtons;
+
     private int currenIndex = 0;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -21,10 +23,15 @@ public class UIManager : MonoBehaviour
     {
         startButton.onClick.AddListener(()=> EnableOrDisableScreen(0,1));
         home.onClick.AddListener(()=> EnableOrDisableScreen(1,0));
-
         
         commandButton.onClick.AddListener(EnableDisableCommandPanel);
         close.onClick.AddListener(EnableDisableCommandPanel);
+
+        for (int i = 0; i < videoButtons.Length; i++)
+        {
+            videoButtons[i].onClick.AddListener(() => GameManager.instance.SendMessageToClient(videoButtons[i].name));
+            //videoButtons[i].onClick.AddListener(() => VideoHandler.instance.PlayVideo(videoButtons[i].GetComponent<ButtonData>().path));
+        }
     }
 
     void EnableOrDisableScreen(int index, int index2)

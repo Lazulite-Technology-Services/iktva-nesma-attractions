@@ -10,9 +10,9 @@ public class UdpManager : MonoBehaviour
     UdpClient udpClient;
     Thread receiveThread;
 
-    public string remoteIP = "192.168.1.100";
-    public int remotePort = 9000;
-    public int localPort = 8000;
+    public string remoteIP = "192.168.0.111";
+    public int remotePort = 8000;
+    public int localPort = 9000;
 
     void Start()
     {
@@ -48,8 +48,11 @@ public class UdpManager : MonoBehaviour
 
     public void HandleCommand(string msg)
     {
-        if (msg == "Play") PlayAnimation();
-        else if (msg == "Stop") StopAnimation();
+        StartCoroutine(VideoHandler.instance.PlayVideo(msg));
+
+        //if (msg == "Play") PlayAnimation();
+
+        //else if (msg == "Stop") StopAnimation();
     }
 
     public void SendMessage(string message)
