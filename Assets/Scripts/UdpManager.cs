@@ -13,7 +13,8 @@ public class UdpManager : MonoBehaviour
 
     private ConcurrentQueue<string> messageQueue = new ConcurrentQueue<string>();
 
-    public string remoteIP = "192.168.0.111";
+   
+    public string remoteIP;
     public int remotePort = 8000;
     public int localPort = 9000;
 
@@ -44,12 +45,7 @@ public class UdpManager : MonoBehaviour
                 byte[] data = udpClient.Receive(ref anyIP);
                 string text = Encoding.UTF8.GetString(data);
                 Debug.Log("Received: " + text);
-
-                //UnityMainThreadDispatcher.Instance().Enqueue(() =>
-                //{
-                //    HandleCommand(text);
-                //});
-
+                
                 messageQueue.Enqueue(text);
             }
             catch (Exception err)
@@ -62,10 +58,6 @@ public class UdpManager : MonoBehaviour
     public void HandleCommand(string msg)
     {
         StartCoroutine(VideoHandler.instance.PlayVideo(msg));
-
-        //if (msg == "Play") PlayAnimation();
-
-        //else if (msg == "Stop") StopAnimation();
     }
 
     public void SendMessage(string message)
@@ -75,16 +67,6 @@ public class UdpManager : MonoBehaviour
         byte[] data = Encoding.UTF8.GetBytes(message);
         sender.Send(data, data.Length, remoteIP, remotePort);
         sender.Close();
-    }
-
-    void PlayAnimation()
-    {
-        Debug.Log("🎬 Play animation command received");
-    }
-
-    void StopAnimation()
-    {
-        Debug.Log("⏹️ Stop animation command received");
     }
 
     void OnApplicationQuit()

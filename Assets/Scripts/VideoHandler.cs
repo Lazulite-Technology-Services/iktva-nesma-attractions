@@ -21,7 +21,7 @@ public class VideoHandler : MonoBehaviour
 
     [SerializeField] private RenderTexture videoTexture;
 
-    [SerializeField] private float tweenSpeed = 0.25f;
+    [SerializeField] private float tweenSpeed = 0f;
 
     [SerializeField] private List<VideoPathHolder> pathList = new List<VideoPathHolder>();
 
@@ -48,7 +48,12 @@ public class VideoHandler : MonoBehaviour
 
         yield return new WaitForSeconds(0.5f);
 
-        StartFadeOut(path);
+        player.Stop();
+        videoTexture.Release();
+        player.url = path;
+        player.Play();
+
+        //StartFadeOut(path);
     }
 
     private string FindVideoThePath(string buttonname)
@@ -80,24 +85,30 @@ public class VideoHandler : MonoBehaviour
     {
         string path = FindVideoThePath(buttonname);
 
-        yield return new WaitForSeconds(0.25f);
+        yield return null;
+        //yield return new WaitForSeconds(0.25f);
 
-        StartFadeOut(path);
-    }
-
-    private void StartFadeOut(string path)
-    {
-        videoImage.DOColor(new Color(1, 1, 1, 0), tweenSpeed).OnComplete(() => StartFadeIn(path));
-    }
-
-    private void StartFadeIn(string path)
-    {
         player.Stop();
         videoTexture.Release();
         player.url = path;
         player.Play();
-        videoImage.DOColor(new Color(1, 1, 1, 1), tweenSpeed);
+
+        //StartFadeOut(path);
     }
+
+    //private void StartFadeOut(string path)
+    //{
+    //    videoImage.DOColor(new Color(1, 1, 1, 0), tweenSpeed).OnComplete(() => StartFadeIn(path));
+    //}
+
+    //private void StartFadeIn(string path)
+    //{
+    //    player.Stop();
+    //    videoTexture.Release();
+    //    player.url = path;
+    //    player.Play();
+    //    videoImage.DOColor(new Color(1, 1, 1, 1), tweenSpeed);
+    //}
 
     private void LoadPath()
     {

@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -10,6 +11,8 @@ public class UIManager : MonoBehaviour
     [SerializeField] private Button startButton, home, save, close, commandButton;
 
     [SerializeField] private Button[] videoButtons;
+
+    [SerializeField] private TMP_InputField ipField;
 
     private int currenIndex = 0;
 
@@ -25,13 +28,10 @@ public class UIManager : MonoBehaviour
         home.onClick.AddListener(()=> EnableOrDisableScreen(1,0));
         
         commandButton.onClick.AddListener(EnableDisableCommandPanel);
+        //save.onClick.AddListener(()=> GameManager.instance.SaveIP(ipField.text));
         close.onClick.AddListener(EnableDisableCommandPanel);
 
-        //for (int i = 0; i < videoButtons.Length; i++)
-        //{
-        //    videoButtons[i].onClick.AddListener(() => GameManager.instance.SendMessageToClient(videoButtons[i].name));
-        //    //videoButtons[i].onClick.AddListener(() => VideoHandler.instance.PlayVideo(videoButtons[i].GetComponent<ButtonData>().path));
-        //}
+        ipField.text = PlayerPrefs.GetString("ip");
     }
 
     void EnableOrDisableScreen(int index, int index2)
@@ -40,8 +40,9 @@ public class UIManager : MonoBehaviour
         screens[index2].SetActive(true);
     }
 
-    void EnableDisableCommandPanel()
+    private void EnableDisableCommandPanel()
     {
         commandPanel.SetActive(!commandPanel.activeSelf);
+        Debug.Log(PlayerPrefs.GetString("ip"));
     }
 }
