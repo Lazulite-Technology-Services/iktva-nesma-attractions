@@ -25,7 +25,7 @@ public class UIManager : MonoBehaviour
     void Init()
     {
         startButton.onClick.AddListener(()=> EnableOrDisableScreen(0,1));
-        home.onClick.AddListener(()=> EnableOrDisableScreen(1,0));
+        //home.onClick.AddListener(()=> EnableOrDisableScreen(1,0));
         
         commandButton.onClick.AddListener(EnableDisableCommandPanel);
         //save.onClick.AddListener(()=> GameManager.instance.SaveIP(ipField.text));
@@ -36,6 +36,7 @@ public class UIManager : MonoBehaviour
 
     void EnableOrDisableScreen(int index, int index2)
     {
+        home.gameObject.SetActive(true);
         screens[index].SetActive(false);
         screens[index2].SetActive(true);
     }
@@ -44,5 +45,12 @@ public class UIManager : MonoBehaviour
     {
         commandPanel.SetActive(!commandPanel.activeSelf);
         Debug.Log(PlayerPrefs.GetString("ip"));
+    }
+
+    public void Home()
+    {
+        home.gameObject.SetActive(false);
+        screens[0].SetActive(true);
+        screens[1].SetActive(false);
     }
 }

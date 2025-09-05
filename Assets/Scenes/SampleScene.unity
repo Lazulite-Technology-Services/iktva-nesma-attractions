@@ -157,7 +157,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 400, y: -242.25998}
+  m_AnchoredPosition: {x: 400, y: -242.26001}
   m_SizeDelta: {x: 800, y: 120}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &10863823
@@ -226,16 +226,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1119797261}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: SendMessageToClient
+      - m_Target: {fileID: 307177843}
+        m_TargetAssemblyTypeName: OSCJsonLoader, Assembly-CSharp
+        m_MethodName: SendOSCCommandByName
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Shareholders
+          m_StringArgument: shareholders
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &10863825
@@ -518,7 +518,7 @@ GameObject:
   - component: {fileID: 136675897}
   - component: {fileID: 136675901}
   m_Layer: 5
-  m_Name: AboutUs
+  m_Name: About Us
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -610,16 +610,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1119797261}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: SendMessageToClient
+      - m_Target: {fileID: 307177843}
+        m_TargetAssemblyTypeName: OSCJsonLoader, Assembly-CSharp
+        m_MethodName: SendOSCCommandByName
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: AboutUs
+          m_StringArgument: aboutus
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &136675899
@@ -779,16 +779,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1119797261}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: SendMessageToClient
+      - m_Target: {fileID: 307177843}
+        m_TargetAssemblyTypeName: OSCJsonLoader, Assembly-CSharp
+        m_MethodName: SendOSCCommandByName
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Sustainability
+          m_StringArgument: sustainability
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &160469124
@@ -924,6 +924,52 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &307177842
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 307177844}
+  - component: {fileID: 307177843}
+  m_Layer: 0
+  m_Name: JsonLoader
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &307177843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 307177842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 932a6f71029a8ee4d82d34d5c5aa83d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  entries: []
+  jsonFileName: commands.json
+--- !u!4 &307177844
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 307177842}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 21.72588, y: -4.191379, z: 571.70746}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &375465197
 GameObject:
   m_ObjectHideFlags: 0
@@ -939,7 +985,7 @@ GameObject:
   - component: {fileID: 375465199}
   - component: {fileID: 375465203}
   m_Layer: 5
-  m_Name: SafeManhours
+  m_Name: Safe Man-hours
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -962,7 +1008,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1285.8, y: -242.25998}
+  m_AnchoredPosition: {x: 1285.8, y: -242.26001}
   m_SizeDelta: {x: 800, y: 120}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &375465199
@@ -1031,16 +1077,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1119797261}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: SendMessageToClient
+      - m_Target: {fileID: 307177843}
+        m_TargetAssemblyTypeName: OSCJsonLoader, Assembly-CSharp
+        m_MethodName: SendOSCCommandByName
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: SafeManhours
+          m_StringArgument: safemanhours
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &375465201
@@ -1150,7 +1196,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Shareholders
+  m_text: 'Shareholders
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8ffb6b426d4ec2d449490ca6c48c8709, type: 2}
   m_sharedMaterial: {fileID: -50134521225740812, guid: 8ffb6b426d4ec2d449490ca6c48c8709, type: 2}
@@ -1229,17 +1277,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 471475166}
   m_CullTransparentMesh: 1
---- !u!114 &517257132 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6064562312564590925, guid: c54e8b84b042da745966ef46fa89bf24, type: 3}
-  m_PrefabInstance: {fileID: 4740538590291679410}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 54b2284f7e7b95f4db5e0a4b4534d0ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1907,7 +1944,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -33.00006}
+  m_AnchoredPosition: {x: 0, y: -33.000732}
   m_SizeDelta: {x: -874.19995, y: -933.22003}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &813341310
@@ -2449,7 +2486,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Corporate Social Responsibilities
+  m_text: Corporate Social Responsibility
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8ffb6b426d4ec2d449490ca6c48c8709, type: 2}
   m_sharedMaterial: {fileID: -50134521225740812, guid: 8ffb6b426d4ec2d449490ca6c48c8709, type: 2}
@@ -2650,7 +2687,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e04a4ab8582677d42a0ade719e5cc305, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  udpManagerInstance: {fileID: 517257132}
+  oscObject: {fileID: 1705619653}
 --- !u!4 &1119797262
 Transform:
   m_ObjectHideFlags: 0
@@ -2743,7 +2780,7 @@ GameObject:
   - component: {fileID: 1294926907}
   - component: {fileID: 1294926911}
   m_Layer: 5
-  m_Name: CorporateSocialResponsibilities
+  m_Name: Corporate Social Responsibility
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2835,16 +2872,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1119797261}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: SendMessageToClient
+      - m_Target: {fileID: 307177843}
+        m_TargetAssemblyTypeName: OSCJsonLoader, Assembly-CSharp
+        m_MethodName: SendOSCCommandByName
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: CorporateSocialResponsibilities
+          m_StringArgument: rocialresponsibility
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1294926909
@@ -2912,7 +2949,7 @@ GameObject:
   - component: {fileID: 1310939123}
   - component: {fileID: 1310939127}
   m_Layer: 5
-  m_Name: OngoingProjects
+  m_Name: Ongoing Projects
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3004,16 +3041,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1119797261}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: SendMessageToClient
+      - m_Target: {fileID: 307177843}
+        m_TargetAssemblyTypeName: OSCJsonLoader, Assembly-CSharp
+        m_MethodName: SendOSCCommandByName
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: OngoingProjects
+          m_StringArgument: ongoingprojects
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1310939125
@@ -3389,16 +3426,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1119797261}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: SendMessageToClient
+      - m_Target: {fileID: 307177843}
+        m_TargetAssemblyTypeName: OSCJsonLoader, Assembly-CSharp
+        m_MethodName: SendOSCCommandByName
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Subsidiaries
+          m_StringArgument: subsidiaries
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1473871707
@@ -3528,6 +3565,53 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1536017525}
   m_CullTransparentMesh: 1
+--- !u!1 &1705619652
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1705619654}
+  - component: {fileID: 1705619653}
+  m_Layer: 0
+  m_Name: OSC-Object
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1705619653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1705619652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4496d42b2baccf84e887ff338bed29f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inPort: 6969
+  outIP: 
+  outPort: 7000
+--- !u!4 &1705619654
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1705619652}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 21.72588, y: -4.191379, z: 571.70746}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1791190312 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2257379371355887593, guid: e0bdfb57a6155414ab9f4bd1f546c222, type: 3}
@@ -3548,7 +3632,7 @@ GameObject:
   - component: {fileID: 1807836132}
   - component: {fileID: 1807836136}
   m_Layer: 5
-  m_Name: CorporateAwards
+  m_Name: Corporate Award
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3640,16 +3724,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1119797261}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: SendMessageToClient
+      - m_Target: {fileID: 307177843}
+        m_TargetAssemblyTypeName: OSCJsonLoader, Assembly-CSharp
+        m_MethodName: SendOSCCommandByName
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: CorporateAwards
+          m_StringArgument: corporateaward
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1807836134
@@ -3942,9 +4026,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1119797261}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: SendMessageToClient
+      - m_Target: {fileID: 307177843}
+        m_TargetAssemblyTypeName: OSCJsonLoader, Assembly-CSharp
+        m_MethodName: SendOSCCommandByName
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3952,6 +4036,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: home
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1076930212}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: Home
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1911580158
@@ -4260,6 +4356,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MainThreadDispatcher
       objectReference: {fileID: 0}
+    - target: {fileID: 2818398985741277672, guid: 8e1a1ef539e4f60488c360bd6e761937, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4327487913589052877, guid: 8e1a1ef539e4f60488c360bd6e761937, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -4429,6 +4529,10 @@ PrefabInstance:
     - target: {fileID: 6900423140573570463, guid: c54e8b84b042da745966ef46fa89bf24, type: 3}
       propertyPath: m_Name
       value: UdpManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 6900423140573570463, guid: c54e8b84b042da745966ef46fa89bf24, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4670,3 +4774,5 @@ SceneRoots:
   - {fileID: 7623348743917230411}
   - {fileID: 1174276653}
   - {fileID: 2922977871971444065}
+  - {fileID: 1705619654}
+  - {fileID: 307177844}

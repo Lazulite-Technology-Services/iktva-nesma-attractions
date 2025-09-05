@@ -877,30 +877,6 @@ PrefabInstance:
       propertyPath: m_TargetTexture
       value: 
       objectReference: {fileID: 8400000, guid: 3b059bba35846a34ea68b3694bdab30e, type: 2}
-    - target: {fileID: 981457437842876855, guid: f52625d2d50d6b749bbc13054e0a9c44, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 981457437842876855, guid: f52625d2d50d6b749bbc13054e0a9c44, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 981457437842876855, guid: f52625d2d50d6b749bbc13054e0a9c44, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 981457437842876855, guid: f52625d2d50d6b749bbc13054e0a9c44, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 981457437842876855, guid: f52625d2d50d6b749bbc13054e0a9c44, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 1737
-      objectReference: {fileID: 0}
-    - target: {fileID: 981457437842876855, guid: f52625d2d50d6b749bbc13054e0a9c44, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 835
-      objectReference: {fileID: 0}
     - target: {fileID: 2465507498984757982, guid: f52625d2d50d6b749bbc13054e0a9c44, type: 3}
       propertyPath: m_Name
       value: ----------- Globe Display Elemets -----------------
@@ -948,18 +924,6 @@ PrefabInstance:
     - target: {fileID: 6760941999259557129, guid: f52625d2d50d6b749bbc13054e0a9c44, type: 3}
       propertyPath: m_IsActive
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7476436517928508833, guid: f52625d2d50d6b749bbc13054e0a9c44, type: 3}
-      propertyPath: m_MatchWidthOrHeight
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7476436517928508833, guid: f52625d2d50d6b749bbc13054e0a9c44, type: 3}
-      propertyPath: m_ReferenceResolution.x
-      value: 1920
-      objectReference: {fileID: 0}
-    - target: {fileID: 7476436517928508833, guid: f52625d2d50d6b749bbc13054e0a9c44, type: 3}
-      propertyPath: m_ReferenceResolution.y
-      value: 1080
       objectReference: {fileID: 0}
     - target: {fileID: 8781559050646388952, guid: f52625d2d50d6b749bbc13054e0a9c44, type: 3}
       propertyPath: m_Camera
@@ -2036,7 +2000,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1714328323
 RectTransform:
   m_ObjectHideFlags: 0

@@ -1,0 +1,40 @@
+{
+    "fileData": [        
+        {
+            "Name": "aboutus",
+            "oscCmd": "/composition/columns/1/connect"
+        },
+        {
+            "Name": "corporateaward",
+            "oscCmd": "/composition/columns/3/connect"
+        },
+        {
+            "Name": "shareholders",
+            "oscCmd": "/composition/columns/1/connect"
+        },
+        {
+            "Name": "safemanhours",
+            "oscCmd": "/composition/columns/3/connect"
+        },
+        {
+            "Name": "subsidiaries",
+            "oscCmd": "/composition/columns/1/connect"
+        },
+        {
+            "Name": "rocialresponsibility",
+            "oscCmd": "/composition/columns/3/connect"
+        },
+        {
+            "Name": "ongoingprojects",
+            "oscCmd": "/composition/columns/1/connect"
+        },
+        {
+            "Name": "sustainability",
+            "oscCmd": "/composition/columns/3/connect"
+        },
+        {
+            "Name": "home",
+            "oscCmd": "/composition/columns/3/connect"
+        }
+    ]
+}
