@@ -25,10 +25,8 @@ public class UIManager : MonoBehaviour
     void Init()
     {
         startButton.onClick.AddListener(()=> EnableOrDisableScreen(0,1));
-        //home.onClick.AddListener(()=> EnableOrDisableScreen(1,0));
         
         commandButton.onClick.AddListener(EnableDisableCommandPanel);
-        //save.onClick.AddListener(()=> GameManager.instance.SaveIP(ipField.text));
         close.onClick.AddListener(EnableDisableCommandPanel);
 
         ipField.text = PlayerPrefs.GetString("ip");
