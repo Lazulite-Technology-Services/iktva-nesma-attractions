@@ -28,6 +28,7 @@ public class OSCJsonLoader : MonoBehaviour
     void LoadFromJSON()
     {
         string path = Path.Combine(Application.persistentDataPath,jsonFileName);
+        //string path = Path.Combine(Application.streamingAssetsPath, "data",jsonFileName);
 
         if (File.Exists(path))
         {
